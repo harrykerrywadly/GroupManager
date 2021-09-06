@@ -20,26 +20,16 @@ from haruka.modules.helper_funcs.misc import paginate_modules
 from haruka.modules.translations.strings import tld, tld_help 
 from haruka.modules.connection import connected
 
-PM_START = """Hello {}, my name is {}!
+PM_START = """✨හලෝ {} කෝමද ඔයාට, මම DARK KING [🤴](https://telegra.ph/file/611b13365c0eb719cc287.jpg) !
 
-You know how hard it is sometimes to manage group so here is the solution for you
+මම දන්නවා ඔයාට මාව නැතිව ඔයාගේ Group එක manage කරන්න අමාරුයි කියලා😌.
 
-I'm group manager bot and Anti-spam for RR Players🃏
+ඉතින් මේක තමයි ඔයාට, මාව පාවිච්චි කරලා ඔයාගේ Group එක manage කරන්න තියෙන හොදම chance එක😃.
 
-Activate Anti-spam protection in your BM by this command : 
-/antispam on 
+ඉතින් මෙතන ක්ලික් කරලා, මාව ඔයාගේ Group එකට එකතු කරගන්න😇.
 
-Made from the source code of [Aditya 🇮🇳](t.me/xditya)
-
-Special thanks to [this person](t.me/denver02) for helping me.
-
-Deploy a bot like me [now](www.github.com/xditya/GroupManager)
-
-Watch [video tutorial](https://www.youtube.com/watch?v=gXXFpTAk6Vo&feature=youtu.be) on deploying me.
-
-Click /help or Help button below to find out more about how to use me to my full potential.
-
- Add me to a group by clicking [here](http://t.me/tg_GroupManagerBot?startgroup=true).
+Developed by [~Heran~](t.me/WERA_01)
+©2021 @DARK_KINGbot Bot All Rights Reserved.
 """
 
 
@@ -157,7 +147,7 @@ def send_start(bot, update):
     first_name = update.effective_user.first_name 
     text = PM_START
 
-    keyboard = [[InlineKeyboardButton(text="🇮🇳 Language", callback_data="set_lang_")]]
+    keyboard = [[InlineKeyboardButton(text="🇱🇰 Language", callback_data="set_lang_")]]
     keyboard += [[InlineKeyboardButton(text="🛠 Reporting", callback_data="cntrl_panel_M"), 
         InlineKeyboardButton(text="❔ Help", callback_data="help_back")]]
 
